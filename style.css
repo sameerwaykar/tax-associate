@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    color: #1A1A1A;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========================= TOP BAR ========================== */
+.topbar {
+    background: #163651;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.topbar-left,
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.topbar i {
+    color: #37C3C9;
+    margin-right: 6px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-left: 18px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    color: #37C3C9;
+}
+
+/* ========================= NAVBAR ========================== */
+.navbar {
+    background: #fff;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0F3554;
+}
+
+.navbar-nav .nav-link {
+    color: #1A1A1A;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #37C3C9;
+}
+
+/* ========================= HERO SECTION ========================== */
+.hero-section {
+    position: relative;
+    padding: 60px 0 60px;
+    background: url("../images/banner-img.png") center center / cover no-repeat;
+    overflow: hidden;
+    max-height: 656px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 37, 66, 0.72);
+}
+
+.hero-content,
+.hero-form {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #E8EEF5;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background: #40A5A2;
+    color: #fff;
+    padding: 11px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: #1eaab1;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ========================= FORM CARD ========================== */
+.form-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.form-card h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #02274C;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    height: 60px;
+    border-radius: 40px;
+    border: 1px solid #d9d9d9;
+    padding: 0 22px;
+    margin-bottom: 24px;
+    box-shadow: none !important;
+}
+
+.form-check {
+    margin: 20px 0 28px;
+}
+
+.form-check-label {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.apply-btn {
+    background: #0F3554;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.apply-btn:hover {
+    background: #08243f;
+}
+
+/* ========================= SERVICES ========================== */
+.services-section {
+    padding: 90px 0;
+    background: #F5FAFB;
+}
+
+.service-card {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.service-icon {
+    width: 90px;
+    height: 90px;
+    background: #37C3C9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0F3554;
+    margin-bottom: 14px;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ========================= RESPONSIVE ========================== */
+@media(max-width:991px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .form-card {
+        margin-top: 50px;
+    }
+
+    .service-card {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:767px) {
+    .topbar {
+        text-align: center;
+    }
+
+    .topbar-left,
+    .topbar-right {
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .form-card {
+        padding: 30px;
+    }
+
+    .form-card h2 {
+        font-size: 30px;
+    }
+
+    .service-card h3 {
+        font-size: 28px;
+    }
+
+    .service-card p {
+        font-size: 16px;
+    }
+}
